@@ -33,4 +33,24 @@
   border-radius: 2rem;
   background-color: var(--glass);
   overflow: hidden;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .appGlass{
+    grid-template-columns: 10% 50% auto;
+    overflow-y: scroll;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  
+  .appGlass{
+    grid-template-columns: 1fr;
+  }
+  .appGlass::-webkit-scrollbar{
+    display: none;
+  }
 }
